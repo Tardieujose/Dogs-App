@@ -73,7 +73,7 @@ router.post('/dogs', async(req, res) => {
   if(!name || !height_min || !height_max || !weight_min || !weight_max) {
     return res
       .status(400)
-      .send({msg: "Falta enviar datos obligatorios"})
+      .send({msg: "Faltan datos"})
   }
   try {
     const dog = await Dog.create(req.body)
@@ -131,7 +131,7 @@ router.get('/dogs/:idRaza', async(req, res, next) => {
   if(!idRaza) {
     return res
       .status(400)
-      .send({msg: "Falta enviar datos obligatorios"})
+      .send({msg: "Faltan datos"})
   }
   try {
     const dogApi = (await axios.get(`${API}?api_key=${API_KEY}`)).data
