@@ -7,23 +7,23 @@ import menu from '../../images/menu.svg';
 
 function Header() {
 
-  const [menuHo, setMenuHo] = useState(false)
+  const [menuHome, setMenuHome] = useState(false)
 
   function handleClick() {
-    setMenuHo(!menuHo)
+    setMenuHome(!menuHome)
   }
 
   return(
     <div className="header">
       <div className="header_cont">
         <div className='div_responsive_header'>
-          <Link to="/home" className="logo"><h1 className="logo">DOGS</h1></Link>
+          <Link to="/home" className="logo"><h1 className="logo">PERRITOS</h1></Link>
           <button className='button_header_menu' onClick={handleClick}>
             <img className='menu' src={menu} alt="menu" />
           </button>
         </div>
 
-        {/* <div className={menuHo  ? "menu_hiden active" : "menu_hiden"}>
+        {/* <div className={menuHome  ? "menu_hiden active" : "menu_hiden"}>
           {}
         </div> */}
 

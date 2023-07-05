@@ -74,12 +74,6 @@
   color: var(--naranja);
 }
 
-/* .div_nameResult{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
 .cleaner {
   opacity: 0;
   border: 1px solid var(--gris-muy-claro);

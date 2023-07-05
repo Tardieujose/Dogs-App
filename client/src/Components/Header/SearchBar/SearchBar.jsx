@@ -15,7 +15,7 @@ function SearchBar() {
 
   function handleChange(e){
     setNameDog(e.target.value)
-    if(nameDog && nameDog) {
+    if(nameDog) {
       dispatch(searchDogs(nameDog))
     }
   }
@@ -28,9 +28,9 @@ function SearchBar() {
     <div className="searchBar_Container">
       <div className="divInput_SearchBar">
         <div className="div_button_search">
-          <img className="searchIcon" src={search_icon} alt="serach" />
+          <img className="searchIcon" src={search_icon} alt="search" />
         </div>
-        <input className="searchBar" type="text" placeholder="Buscar" onChange={handleChange} value={nameDog}/>
+        <input className="searchBar" type="text" placeholder="Buscar perro" onChange={handleChange} value={nameDog}/>
         <button className={nameDog.length > 0 ? "cleaner active" : "cleaner"} onClick={handleClick} >x</button>
       </div>
 
