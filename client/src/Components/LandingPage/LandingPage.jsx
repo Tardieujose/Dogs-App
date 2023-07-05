@@ -10,7 +10,7 @@ function LandingPage() {
       {/* --- header --- */}
       <header>
         <nav>
-          <span className={s.logo}>DOGS</span>
+          <span className={s.logo}>PERRITOS</span>
           <Link to="/home" className={s.acceder}>Acceder</Link>
         </nav>
       </header>
